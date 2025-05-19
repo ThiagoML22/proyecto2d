@@ -1,0 +1,76 @@
+/* index.css */
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+@layer base {
+  body {
+    margin: 0;
+    font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', 'Roboto', 'Oxygen',
+      'Ubuntu', 'Cantarell', 'Fira Sans', 'Droid Sans', 'Helvetica Neue',
+      sans-serif;
+    -webkit-font-smoothing: antialiased;
+    -moz-osx-font-smoothing: grayscale;
+    @apply bg-gradient-to-br from-gray-900 to-gray-800;
+    color: #fff;
+    overflow: hidden;
+  }
+}
+
+@layer components {
+  .game-card {
+    @apply bg-gray-800 rounded-xl overflow-hidden transition-all duration-300 hover:scale-105 hover:shadow-xl;
+  }
+
+  .game-card-image {
+    @apply w-full h-48 object-cover transition-all duration-300 hover:brightness-110;
+  }
+
+  .nav-button {
+    @apply w-full text-left px-4 py-3 rounded-lg flex items-center space-x-3 transition-all duration-200;
+  }
+
+  .nav-button-active {
+    @apply bg-gradient-to-r from-blue-600 to-blue-500 shadow-lg;
+  }
+
+  .nav-button-inactive {
+    @apply hover:bg-gray-700/50 hover:shadow-md;
+  }
+
+  .primary-button {
+    @apply bg-gradient-to-r from-blue-600 to-blue-500 hover:from-blue-700 hover:to-blue-600 px-6 py-3 rounded-lg font-semibold transition-all duration-200 shadow-lg hover:shadow-xl;
+  }
+
+  .secondary-button {
+    @apply bg-gray-700 hover:bg-gray-600 px-4 py-2 rounded-lg transition-all duration-200 shadow-md hover:shadow-lg;
+  }
+}
+
+::-webkit-scrollbar {
+  width: 8px;
+}
+
+::-webkit-scrollbar-track {
+  @apply bg-gray-800;
+}
+
+::-webkit-scrollbar-thumb {
+  @apply bg-gray-600 rounded hover:bg-gray-500 transition-colors duration-200;
+}
+
+.line-clamp-2 {
+  display: -webkit-box;
+  -webkit-line-clamp: 2;
+  -webkit-box-orient: vertical;
+  overflow: hidden;
+}
+
+/* Animaciones y efectos */
+.hover-glow {
+  @apply hover:shadow-[0_0_15px_rgba(59,130,246,0.5)] transition-shadow duration-300;
+}
+
+.text-gradient {
+  @apply bg-clip-text text-transparent bg-gradient-to-r from-blue-400 to-blue-600;
+}
