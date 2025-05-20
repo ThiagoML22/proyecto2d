@@ -77,18 +77,6 @@ proyecto2d/
 - Temas oscuros
 - Feedback visual en operaciones
 
-## 🤝 Contribuir
-
-1. Fork del repositorio
-2. Crear rama para feature (`git checkout -b feature/NuevaCaracteristica`)
-3. Commit de cambios (`git commit -m 'Añadir nueva característica'`)
-4. Push a la rama (`git push origin feature/NuevaCaracteristica`)
-5. Crear Pull Request
-
-## 📄 Licencia
-
-Este proyecto está bajo la Licencia MIT - ver el archivo LICENSE para detalles
-
 ## 🎮 Uso
 
 ### Versión Web
